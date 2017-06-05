@@ -1,0 +1,33 @@
+安装笔记
+1.安装包：
+	npm install pomelo -g
+	默认选1，websocket
+2.创建项目：
+	pomelo init ./HelloWorld
+	默认选1，websocket
+3.安装插件
+	进入HelloWorld
+	双击npm-install.bat
+4.启动(开两个dos窗口)
+	game-server中：
+		cd game-server
+		pomelo start (3005)
+	web-server中: 
+		cd web-server
+		node app (3001)
+5.查看服务,dos下
+	pomelo list
+ window下:
+	http://localhost:3001
+
+6.关闭
+pomelo stop //只关闭game server
+
+pomelo
+
+有连接传上来，注册到对象中
+收到消息，转发给其他的连接
+有人下线，转发给其他的连接
+
+客户端发送
+服务端接收
